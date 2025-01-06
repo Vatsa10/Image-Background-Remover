@@ -14,7 +14,7 @@ def remove_background(image):
     return output_image
 
 # Streamlit app
-st.title("Image Background Remover")
+st.title("Image Background Remover by Vatsa")
 
 # Upload image
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
@@ -24,7 +24,7 @@ if uploaded_file is not None:
     image = Image.open(uploaded_file)
     
     # Display the original image
-    st.image(image, caption='Original Image', use_column_width=True)
+    st.image(image, caption='Original Image', use_container_width=True)
 
     # Remove background
     output_image = remove_background(image)
@@ -33,7 +33,7 @@ if uploaded_file is not None:
     output_image_pil = Image.fromarray(output_image)
 
     # Display the output image
-    st.image(output_image_pil, caption='Image with Background Removed', use_column_width=True)
+    st.image(output_image_pil, caption='Image with Background Removed', use_container_width=True)
 
     # Convert the output image to bytes for download
     buffered = io.BytesIO()
