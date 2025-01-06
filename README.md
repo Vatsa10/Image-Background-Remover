@@ -26,4 +26,6 @@ Make sure you have Python installed on your machine. You can download it from [p
    streamlit run app.py
 
 ## Example Screenshot
-https://github.com/Vatsa10/Image-Background-Remover/blob/main/Output%20Screenshot%201.png
+
+![image](https://github.com/user-attachments/assets/0dad19df-454a-4f94-93e9-1048d46e16e7)
+
